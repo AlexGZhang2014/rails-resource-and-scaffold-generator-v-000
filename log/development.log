@@ -176,3 +176,39 @@ Processing by ArticlesController#update as HTML
   [1m[35m (2.0ms)[0m  commit transaction
 Redirected to http://67.205.165.109:53094/articles/1
 Completed 302 Found in 53ms (ActiveRecord: 2.4ms)
+
+
+Started GET "/articles/1" for 65.191.0.83 at 2018-07-06 03:36:28 +0000
+Cannot render console from 65.191.0.83! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mArticle Load (0.2ms)[0m  [1mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered articles/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 23ms (Views: 21.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/articles" for 65.191.0.83 at 2018-07-06 03:36:31 +0000
+Cannot render console from 65.191.0.83! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ArticlesController#index as HTML
+  [1m[35mArticle Load (0.2ms)[0m  SELECT "articles".* FROM "articles"
+  Rendered articles/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 19ms (Views: 18.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/articles/new" for 65.191.0.83 at 2018-07-06 03:36:35 +0000
+Cannot render console from 65.191.0.83! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ArticlesController#new as HTML
+  Rendered articles/_form.html.erb (1.5ms)
+  Rendered articles/new.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 17ms (Views: 16.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/articles" for 65.191.0.83 at 2018-07-06 03:36:55 +0000
+Cannot render console from 65.191.0.83! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ArticlesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"iRuXZFjOAzV4Q+SOBAHijION3P7e0JOV16CcS9T9faOyOK0/4fJIZdT9gNvLNpDCu7lliDwLc/9KuURXICREIA==", "article"=>{"title"=>"Second Article", "body"=>"Turtwig Grotle Torterra Chimchar Monferno Infernape Piplup Prinplup Empoleon Starly Staravia Staraptor Bidoof Bibarel Kricketot Kricketune Shinx Luxio Luxray Budew Roserade Cranidos Rampardos Shieldon Bastiodon Burmy Wormadam Mothim Combee Vespiquen Pachirisu Buizel Floatzel Cherubi Cherrim Shellos Gastrodon Ambipom Drifloon Drifblim Buneary Lopunny Mismagius Honchkrow Glameow Purugly Chingling Stunky Skuntank Bronzor Bronzong Bonsly Mime Jr. Happiny Chatot Spiritomb Gible Gabite Garchomp Munchlax Riolu Lucario Hippopotas Hippowdon Skorupi Drapion Croagunk Toxicroak Carnivine Finneon Lumineon Mantyke Snover Abomasnow Weavile Magnezone Lickilicky Rhyperior Tangrowth Electivire Magmortar Togekiss Yanmega Leafeon Glaceon Gliscor Mamoswine Heatran Regigigas Giratina Cresselia Phione Manaphy Darkrai Shaymin Arceus  nnTurtwig Grotle"}, "commit"=>"Create Article"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "articles" ("title", "body", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["title", "Second Article"], ["body", "Turtwig Grotle Torterra Chimchar Monferno Infernape Piplup Prinplup Empoleon Starly Staravia Staraptor Bidoof Bibarel Kricketot Kricketune Shinx Luxio Luxray Budew Roserade Cranidos Rampardos Shieldon Bastiodon Burmy Wormadam Mothim Combee Vespiquen Pachirisu Buizel Floatzel Cherubi Cherrim Shellos Gastrodon Ambipom Drifloon Drifblim Buneary Lopunny Mismagius Honchkrow Glameow Purugly Chingling Stunky Skuntank Bronzor Bronzong Bonsly Mime Jr. Happiny Chatot Spiritomb Gible Gabite Garchomp Munchlax Riolu Lucario Hippopotas Hippowdon Skorupi Drapion Croagunk Toxicroak Carnivine Finneon Lumineon Mantyke Snover Abomasnow Weavile Magnezone Lickilicky Rhyperior Tangrowth Electivire Magmortar Togekiss Yanmega Leafeon Glaceon Gliscor Mamoswine Heatran Regigigas Giratina Cresselia Phione Manaphy Darkrai Shaymin Arceus  nnTurtwig Grotle"], ["created_at", "2018-07-06 03:36:55.877553"], ["updated_at", "2018-07-06 03:36:55.877553"]]
+  [1m[36m (2.3ms)[0m  [1mcommit transaction[0m
+Redirected to http://67.205.165.109:53094/articles/2
+Completed 302 Found in 6ms (ActiveRecord: 2.6ms)

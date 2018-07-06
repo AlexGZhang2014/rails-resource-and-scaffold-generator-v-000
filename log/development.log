@@ -76,3 +76,80 @@ Cannot render console from 65.191.0.83! Allowed networks: 127.0.0.1, ::1, 127.0.
 Processing by ArticlesController#index as HTML
   [1m[35mArticle Load (0.2ms)[0m  SELECT "articles".* FROM "articles"
   Rendered articles/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 1397ms (Views: 1395.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/articles.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 65.191.0.83 at 2018-07-06 03:34:08 +0000
+Cannot render console from 65.191.0.83! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/scaffolds.self-8eb8ca80dbe75eb7ee8d680650cad979bd9cc7c439f84bdaf88d4ae25528cfd9.css?body=1" for 65.191.0.83 at 2018-07-06 03:34:08 +0000
+Cannot render console from 65.191.0.83! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 65.191.0.83 at 2018-07-06 03:34:08 +0000
+Cannot render console from 65.191.0.83! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 65.191.0.83 at 2018-07-06 03:34:08 +0000
+Cannot render console from 65.191.0.83! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 65.191.0.83 at 2018-07-06 03:34:08 +0000
+Cannot render console from 65.191.0.83! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 65.191.0.83 at 2018-07-06 03:34:08 +0000
+Cannot render console from 65.191.0.83! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/articles.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 65.191.0.83 at 2018-07-06 03:34:08 +0000
+Cannot render console from 65.191.0.83! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 65.191.0.83 at 2018-07-06 03:34:08 +0000
+Cannot render console from 65.191.0.83! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/articles/new" for 65.191.0.83 at 2018-07-06 03:34:23 +0000
+Cannot render console from 65.191.0.83! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ArticlesController#new as HTML
+  Rendered articles/_form.html.erb (24.0ms)
+  Rendered articles/new.html.erb within layouts/application (28.6ms)
+Completed 200 OK in 48ms (Views: 43.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/articles/1" for 65.191.0.83 at 2018-07-06 03:34:33 +0000
+Cannot render console from 65.191.0.83! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mArticle Load (0.3ms)[0m  [1mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 404 Not Found in 13ms (ActiveRecord: 0.3ms)
+
+ActiveRecord::RecordNotFound (Couldn't find Article with 'id'=1):
+  app/controllers/articles_controller.rb:67:in `set_article'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.7ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (37.8ms)
+
+
+Started POST "/articles" for 65.191.0.83 at 2018-07-06 03:36:07 +0000
+Cannot render console from 65.191.0.83! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ArticlesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Wdo3clFzscOSNRiVs0IzL9xGG4JiWErkojmIarKDV/pi+Q0p6E/6kz6LfMB8dUFh5HKi9ICDqo4/IFB2RlpueQ==", "article"=>{"title"=>"First Article", "body"=>"Bulbasaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ivysaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Venusaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Charmander Lorem ipsum dolor sit amet, consectetur adipiscing elit. Charmeleon Lorem ipsum dolor sit amet, consectetur adipiscing elit. Charizard Lorem ipsum dolor sit amet, consectetur adipiscing elit. Squirtle Lorem ipsum dolor sit amet, consectetur adipiscing elit. Wartortle Lorem ipsum dolor sit amet, consectetur adipiscing elit. Blastoise Lorem ipsum dolor sit amet, consectetur adipiscing elit. Caterpie Lorem ipsum dolor sit amet, consectetur adipiscing elit. Metapod Lorem ipsum dolor sit amet, consectetur adipiscing elit. Butterfree"}, "commit"=>"Create Article"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "articles" ("title", "body", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "First Article"], ["body", "Bulbasaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ivysaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Venusaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Charmander Lorem ipsum dolor sit amet, consectetur adipiscing elit. Charmeleon Lorem ipsum dolor sit amet, consectetur adipiscing elit. Charizard Lorem ipsum dolor sit amet, consectetur adipiscing elit. Squirtle Lorem ipsum dolor sit amet, consectetur adipiscing elit. Wartortle Lorem ipsum dolor sit amet, consectetur adipiscing elit. Blastoise Lorem ipsum dolor sit amet, consectetur adipiscing elit. Caterpie Lorem ipsum dolor sit amet, consectetur adipiscing elit. Metapod Lorem ipsum dolor sit amet, consectetur adipiscing elit. Butterfree"], ["created_at", "2018-07-06 03:36:07.283368"], ["updated_at", "2018-07-06 03:36:07.283368"]]
+  [1m[35m (2.6ms)[0m  commit transaction
+Redirected to http://67.205.165.109:53094/articles/1
+Completed 302 Found in 7ms (ActiveRecord: 3.1ms)
+
+
+Started GET "/articles/1" for 65.191.0.83 at 2018-07-06 03:36:07 +0000
+Cannot render console from 65.191.0.83! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mArticle Load (0.1ms)[0m  [1mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered articles/show.html.erb within layouts/application (0.9ms)
